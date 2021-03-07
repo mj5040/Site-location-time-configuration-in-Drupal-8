@@ -1,0 +1,11 @@
+services:
+  custom_module.timezone_services:
+    class: Drupal\custom_module\Services\TimezoneService
+    arguments: ['@date.formatter']
+    tags:
+      - { name: backend_overridable}
+
+  custom_module.mymodule:
+    class: Drupal\custom_module\StackMiddleware\InvalidateStackMiddleware
+    tags:
+      - { name: http_middleware, priority: 210, responder: true }      

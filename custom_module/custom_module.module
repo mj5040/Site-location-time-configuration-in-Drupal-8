@@ -1,0 +1,11 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function custom_module_theme($existing, $type, $theme, $path) {
+  return [
+    'timezone_template' => [
+      'variables' => ['current_time' => NULL,'country'=>NULL,'city'=>NULL],
+    ],
+  ];
+}

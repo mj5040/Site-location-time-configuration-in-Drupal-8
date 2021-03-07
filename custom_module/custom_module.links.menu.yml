@@ -1,0 +1,6 @@
+custom_module.admin_settings_form:  
+  title: 'Site location and current time'  
+  route_name: custom_module.custom  
+  description: 'Configure site location and current time for the location'  
+  parent: system.admin_config_regional  
+  weight: 99  

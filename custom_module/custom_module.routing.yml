@@ -1,0 +1,9 @@
+custom_module.custom:
+  path: '/admin/config/custom/adminsettings'
+  defaults:
+    _form: '\Drupal\custom_module\Form\CustomForm'
+    _title: 'Site location and current time'
+  requirements: 
+    _permission: 'access administration pages'
+  options:  
+    _admin_route: TRUE  
